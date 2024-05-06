@@ -1,4 +1,4 @@
-package ClassCodes;
+package ClassCodes.Files;
 
 import javax.xml.crypto.Data;
 import java.io.InputStream;

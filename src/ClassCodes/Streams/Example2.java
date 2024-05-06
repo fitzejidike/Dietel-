@@ -7,15 +7,19 @@ import java.io.InputStream;
 
 public class Example2 {
         public static void main(String[] args) {
-            String fileLocation = "C:\\Users\\DELL\\IdeaProjects\\javaTask\\src\\chapter15\\files\\streams\\sample2.txt";
+
+            String fileLocation = "C:\\Users\\fitz\\IdeaProjects\\Dietel pratice\\src\\ClassCodes\\streams\\EXample2.txt";
+
             try(InputStream inputStream = new FileInputStream(fileLocation);  // try(var inputStream = new FileInputStream(fileLocation)
+
                 DataInputStream dataInputStream = new DataInputStream(inputStream)){ // try(var dataInputStream = new DataInputStream)
                 byte [] fileData =  dataInputStream.readAllBytes();
                 System.out.println(new String(fileData));
+
             }catch(IOException exception){
                 System.err.println("Error: " + exception.getMessage());
             }
         }
     }
 
-}
+
